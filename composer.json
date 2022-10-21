@@ -10,12 +10,6 @@
     ],
     "type": "library",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Mahabubul Hasan",
-            "email": "codehasan@gmail.com"
-        }
-    ],
     "autoload": {
         "files": [
             "src/helpers.php"
