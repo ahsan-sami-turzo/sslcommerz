@@ -1,5 +1,5 @@
 {
-    "name": "xenon/sslcommerz",
+    "name": "radon/sslcommerz",
     "description": "Laravel library for SSLCommerz payment gateway",
     "keywords": [
         "laravel",
@@ -15,7 +15,7 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Xenon\\SslCommerz\\": "src/"
+            "Radon\\SslCommerz\\": "src/"
         }
     },
     "minimum-stability": "dev",
@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Xenon\\SslCommerz\\SslCommerzServiceProvider"
+                "Radon\\SslCommerz\\SslCommerzServiceProvider"
             ]
         }
     }

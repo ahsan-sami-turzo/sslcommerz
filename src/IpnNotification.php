@@ -5,7 +5,7 @@
  * Time: 3:10 PM
  */
 
-namespace Xenon\SslCommerz;
+namespace Radon\SslCommerz;
 
 
 class IpnNotification

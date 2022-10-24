@@ -5,7 +5,7 @@
  * Time: 12:58 PM
  */
 
-namespace Xenon\SslCommerz;
+namespace Radon\SslCommerz;
 
 
 use Illuminate\Support\ServiceProvider;

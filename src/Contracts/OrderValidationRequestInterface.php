@@ -6,7 +6,7 @@
  * Time: 12:42 PM
  */
 
-namespace Xenon\SslCommerz\Contracts;
+namespace Radon\SslCommerz\Contracts;
 
 
 interface OrderValidationRequestInterface extends RequestInterface

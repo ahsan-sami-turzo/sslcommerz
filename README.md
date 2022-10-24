@@ -2,12 +2,12 @@
 
 ## install
 ```
-composer require xenon/sslcommerz
+composer require radon/sslcommerz
 ```
 
 ### publish
 ```
-php artisan vendor:publish --provider=Xenon\SslCommerz\SslCommerzServiceProvider
+php artisan vendor:publish --provider=Radon\SslCommerz\SslCommerzServiceProvider
 ```
 This command will create a `sslcommerz.php` file inside the `config` directory. Configure your parameters in your `.env` file
 ```
@@ -24,15 +24,15 @@ SANDBOX_MODE=true
 ### Initiating a Payment session
 This `initSession` will give you a gateway url. With this url you will be able to continue the payment through sslcommerz.
 ```php
-$customer = new Customer('Mahabubul Hasan', 'mahabub@example.com', '0171xxxxx22');
-$resp = Client::initSession($customer, 29); //29 is the amount
+$customer = new Customer('<<customer_name>>', '<<customer_email>>', '<<customer_phone>>');
+$resp = Client::initSession($customer, '<<amount>>'); 
 echo $resp->getGatewayUrl();
 ```
 or with configuration
 ```php
-$customer = new Customer('Mahabubul Hasan', 'mahabub@example.com', '0171xxxxx22');
+$customer = new Customer('<<customer_name>>', '<<customer_email>>', '<<customer_phone>>');
 $config[SessionRequest::EMI] = '0';
-$resp = Client::initSession($customer, 29, $config);
+$resp = Client::initSession($customer, '<<amount>>', $config);
 echo $resp->getGatewayUrl();
 ```
 
@@ -40,7 +40,7 @@ echo $resp->getGatewayUrl();
 This `verifyOrder` method takes a `val_id` as parameter which you will get in the IPN request.
 
 ```php
-$resp = Client::verifyOrder('180828114058np43AJdzJJOsYzc');
+$resp = Client::verifyOrder('<<order_number>>');
 echo 'status: '.$resp->getStatus();
 echo 'transaction: '.$resp->getTransactionId();
 ```

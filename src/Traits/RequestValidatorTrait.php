@@ -6,10 +6,10 @@
  * Time: 1:04 PM
  */
 
-namespace Xenon\SslCommerz\Traits;
+namespace Radon\SslCommerz\Traits;
 
 
-use Xenon\SslCommerz\Exceptions\RequestParameterMissingException;
+use Radon\SslCommerz\Exceptions\RequestParameterMissingException;
 
 trait RequestValidatorTrait
 {

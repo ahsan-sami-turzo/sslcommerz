@@ -5,7 +5,7 @@
  * Time: 1:20 PM
  */
 
-namespace Xenon\SslCommerz;
+namespace Radon\SslCommerz;
 
 
 class Customer

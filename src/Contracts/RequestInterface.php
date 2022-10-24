@@ -6,7 +6,7 @@
  * Time: 12:41 PM
  */
 
-namespace Xenon\SslCommerz\Contracts;
+namespace Radon\SslCommerz\Contracts;
 
 
 interface RequestInterface
